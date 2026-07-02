@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cartas Para o Futuro ✉️</title>
+
+    <link rel="stylesheet" href="letters.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ❤️ LoveFlix
+        </div>
+
+      <nav>
+        <a href="../index.html">Início</a>
+        <a href="#">Filme</a>
+        <a href="../reasons/index.html">100 Razões</a>
+        <a href="index.html">Cartas para o Futuro</a>
+        <a href="../map/index.html">Mapa</a>
+      </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="original">
+                LOVEFLIX ORIGINAL
+            </span>
+
+            <h1>Cartas Para o Futuro ✉️</h1>
+
+            <div class="info">
+
+                <span>2026</span>
+                <span>❤️ Romance</span>
+                <span>10 Cartas</span>
+
+            </div>
+
+            <p>
+
+                Existem palavras que não são para serem lidas hoje...
+                mas sim no momento certo.
+
+            </p>
+
+            <div class="buttons">
+
+                <button class="play-btn" id="continueBtn">
+                    ▶ Continuar
+                </button>
+
+                <button class="list-btn">
+                    ❤️ Favoritos
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTEÚDO -->
+
+    <main>
+
+        <section class="letters-section">
+
+            <h2>Abrir quando...</h2>
+
+            <div class="letters-grid" id="lettersContainer">
+
+                <!-- Cartas criadas pelo JavaScript -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- MODAL -->
+
+    <div class="modal hidden" id="letterModal">
+
+        <div class="letter-container">
+
+            <button class="close-btn" id="closeModal">
+                ✕
+            </button>
+
+            <!-- Envelope -->
+
+            <div class="envelope" id="envelope">
+
+                <div class="envelope-front">
+
+                    ✉️
+
+                </div>
+
+            </div>
+
+            <!-- Carta -->
+
+            <div class="letter hidden" id="letter">
+
+                <h2 id="letterTitle">
+
+                    Abrir quando...
+
+                </h2>
+
+                <div class="letter-date" id="letterDate">
+
+                    Escrito com ❤️
+
+                </div>
+
+                <div class="letter-body" id="letterText">
+
+                    O conteúdo da carta será colocado aqui.
+
+                </div>
+
+                <div class="letter-footer">
+
+                    Com todo o meu amor ❤️
+
+                </div>
+
+            </div>
+
+            <!-- Navegação -->
+
+            <div class="navigation">
+
+                <button id="prevLetter">
+
+                    ← Carta anterior
+
+                </button>
+
+                <button id="nextLetter">
+
+                    Próxima carta →
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="lettersData.js"></script>
+    <script src="letters.js"></script>
+
+</body>
+
+</html>
