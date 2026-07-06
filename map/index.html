@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>O Nosso Mapa ❤️</title>
+
+    <link rel="stylesheet" href="map.css" />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+      <div class="logo"> ❤️ LoveFlix </div>
+
+      <nav>
+        <a href="../index.html">Início</a>
+        <a href="#">Filme</a>
+        <a href="../reasons/index.html">100 Razões</a>
+        <a href="../letters/index.html">Cartas para o Futuro</a>
+        <a href="index.html">Mapa</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="overlay"></div>
+
+      <div class="hero-content">
+        <span class="original"> LOVEFLIX ORIGINAL </span>
+
+        <h1>O Nosso Mapa ❤️</h1>
+
+        <div class="info">
+          <span>2026</span>
+          <span>❤️ Romance</span>
+          <span id="locationsCount">0 Locais</span>
+        </div>
+
+        <p>
+          Todos os lugares contam uma história. Este mapa guarda algumas das
+          nossas memórias favoritas e muitos dos sonhos que ainda vamos
+          realizar.
+        </p>
+
+        <div class="buttons">
+          <button class="play-btn" id="exploreBtn"> 🗺️ Explorar </button>
+
+          <button class="list-btn"> ❤️ Favoritos </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA -->
+
+    <main>
+      <section class="map-section">
+        <h2>As nossas memórias</h2>
+
+        <div id="map"></div>
+      </section>
+
+      <!-- LOCAIS -->
+
+      <section class="locations-section">
+        <h2>Lugares Marcantes</h2>
+
+        <div id="locationsContainer" class="locations-grid">
+          <!-- Criado pelo JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL -->
+
+    <div class="modal hidden" id="locationModal">
+      <div class="modal-content">
+        <button class="close-btn" id="closeModal"> ✕ </button>
+
+        <img id="locationImage" src="" alt="Local" />
+
+        <div class="modal-info">
+          <h2 id="locationTitle"> Local </h2>
+
+          <p class="location-date" id="locationDate"> Data </p>
+
+          <p class="location-place" id="locationPlace"> Localização </p>
+
+          <p id="locationDescription"> Descrição... </p>
+        </div>
+
+        <div class="navigation">
+          <button id="prevLocation"> ← Anterior </button>
+
+          <button id="nextLocation"> Próximo → </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+
+    <section class="timeline">
+      <h2>A Nossa História</h2>
+
+      <div id="timelineContainer">
+        <!-- Criado pelo JavaScript -->
+      </div>
+    </section>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="locationsData.js"></script>
+
+    <script src="map.js"></script>
+</body>
+</html>
