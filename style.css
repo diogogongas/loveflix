@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #141414;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.logo {
+  color: #e50914;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  background: url("images/banner5.webp") center/cover no-repeat;
+
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.tag {
+  color: #e50914;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 14px 28px;
+  border-radius: 5px;
+}
+
+.play-btn {
+  background: white;
+}
+
+.list-btn {
+  background: #333;
+  color: white;
+}
+
+main {
+  padding: 40px;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+.row h2 {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+  min-width: 250px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.special-card {
+  min-width: 280px;
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.special-card:hover {
+  background: #333;
+}
