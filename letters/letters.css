@@ -61,16 +61,15 @@ nav a:hover{
 
 .hero{
     position: relative;
-    height: 90vh; /* Mantemos a altura */
+    height: 90vh;
     min-height: 550px;
     background: url("../images/letters_banner.jpeg") center/cover no-repeat;
     display: flex;
     align-items: flex-end;
     
-    /* --- ADICIONE ESTAS DUAS LINHAS --- */
-    max-width: 1400px; /* OU OUTRO VALOR: Tente 1200px, 1400px, 1600px conforme preferir */
-    margin: 0 auto;    /* Centraliza o banner se o ecrã for maior que 1400px */
-    /* ---------------------------------- */
+    /* Limita a largura em ecrãs grandes para evitar zoom excessivo */
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .overlay{
@@ -461,6 +460,19 @@ main{
     .hero {
         height: 85vh;
         min-height: 500px;
+        max-width: 100%; /* No telemóvel ocupa a largura toda */
+    }
+
+    /* Overlay ajustado para clarear o rosto no telemóvel */
+    .overlay{
+        background: linear-gradient(
+            0deg,
+            #141414 0%,
+            rgba(20, 20, 20, 0.55) 40%,
+            rgba(20, 20, 20, 0.15) 70%,
+            rgba(0, 0, 0, 0.4) 100%
+        );
+        box-shadow: none;
     }
 
     .hero-content{
