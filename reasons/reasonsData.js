@@ -119,22 +119,19 @@ const rawReasons = [
     text: "Amo mesmo muito o teu sentido de humor porque consegues transmitir alegria de uma forma única. Mesmo quando não estou nos meus melhores dias, basta passar algum tempo contigo para voltar a sorrir. A tua energia é simplesmente contagiante."
 },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "Os teus olhos concentrados",
+        text: "Amo quando estás super concentrada a fazer alguma coisa e ficas com aquele olhar sério e fofo ao mesmo tempo."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "A tua paciência",
+        text: "Mesmo quando eu estou mais chato ou quando demoro mais tempo paea falar, tu consegues manter a calma e ouvir-m com todo o carinho do mundo."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "Seres a minha melhor amiga",
+        text: "Além de seres o amor da minha vida, és também a minha melhor amiga, aquela pessoa a quem posso contar tudo sem sentir vergonha ou recio de nada."
     },
 
                                     {
@@ -261,8 +258,8 @@ const rawReasons = [
 
     
 {
-        title: "Incondicionalmente apoiado",
-        text: "Sei que se o mundo estivesse a cair, tu estarias lá a dar-me a mão. Essa certeza dá-me uma força que nunca pensei ter."
+        title: "Desconectado do mundo",
+        text: "Quando estou contigo, perco completamente a noção do telemóvel e do tempo. Esqueço-me de olhar para as notificações porque o mundo real ao teu lado é mil vezes melhor do que qualquer ecrã."
     },
 
                                     {
@@ -295,16 +292,14 @@ const rawReasons = [
 
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "Completamente apaixonado",
+        text: "O meu amor por ti não para de crescer. É como se esse sentimento nunca tenha um fim e sinceramente, eu quero que ele nunca tenha um fim, porque tú és literalmente a minha metade em pessoa"
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "Sem medo de ser vulnerável",
+        text: "Sempre fui habituado a guardar as coisas para mim e a parecer forte, mas contigo sinto a liberdade de poder admitir os meus medos e fraquezas sem qualquer receio de ser julgado."
     },
 
 
@@ -375,97 +370,82 @@ const rawReasons = [
 
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "Quando me dás a mão na rua",
+        text: "Da primeira vez que me deste a mão espontaneamente enquanto andávamos, senti uma enorme felicidade  reconfortante no peito."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "As nossas fotos engraçadas",
+        text: "Todas as fotos a fazer caretas que tiramos juntos onde só estamos a fazer figuras engraçadas, mas que para mim são das memórias mais preciosas."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "O dia em que soube que era contigo",
+        text: "Quando nos encontramos pela primeira vez não sabia bem como agir por causa das dores e traumas do passado, mas não consegui resistir ao teu feitiço, cada vez que te olho do nada e tu nunca sabes o motivo é porque estou a pensar assim 'Finalmente encontrei a mulher com que vou casar, construir a minha familia e viver o resto da minha vida' Quando te estou a olhar nos olhos é porque estou a pensar assim 'Sim é ela. É com ela que quero passar o resto da minha vida toda."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "O cheiro que ficou no meu casaco",
+        text: "Quando chegava a casa depois de estar contigo e o meu casaco cheirava totalmente a ti, trazendo-me ainda mais saudades ."
     },
 
     
-                                {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
+{
+        title: "Cada reencontro depois de dias longe",
+        text: "Aquela sensação indescritível de te ver a caminhar na minha direção depois de alguns dias sem estarmos juntos. O abraço parece que melhora toda a saudade."
+    },
+
+{
+        title: "Quando cuidaste de mim",
+        text: "Num momento em que estava mais em baixo ou cansado, a forma como foste querida e preocupada fez-me sentir a pessoa mais mimada do mundo."
+    },
+
+{
+        title: "A primeira vez que me viste triste",
+        text: "O dia em que percebi que não precisava de fingir que estava tudo bem comigo. A forma como me ouviste, me abraçaste e ficaste ali comigo mostrou-me o quanto o teu amor é protetor."
+    },
+
+                                    {
+        title: "O abraço de despedida quando estava a ir para a faculdade",
+        text: "Esse dia ficou muito marcado para mim porque era um dia que depois da faculdade ia para Mira e iamos ficar algum tempo sem nos vermos, ainda me lembro de como não nos conseguiamos desapegar um do outro, estavamos sempre a tentar dar o último abraço mas não estavamos a conseguir"
 
     },
 
                                     {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
+        title: "Quando foste a Mira",
+        text: "A sensação foi parecida há do primeiro almoço com os meus pais em que tu estavas lá, mesmo que nesse dia estavas a sentir-te um boado mal foi perfeito pelo simples facto de tu estares lá"
 
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "A primeira vez que me seguraste o braço",
+        text: "Lembro-me de estarmos a andar e do nada te agarrares ao meu braço com carinho. Aquele gesto tão simples fez-me sentir o homem mais protetor e feliz do mundo."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "Quando ficámos a ver as tuas fotos antigas",
+        text: "Aquele dia em que me mostraste fotos tuas de quando eras pequenina. Fiquei a olhar para ti e a pensar na sorte que tive em o tempo ter-te trazido até mim."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "Os dias em que ficamos a falar sobre o nosso futuro",
+        text: "Aquelas conversas espontâneas em que percebemos que queremos as mesmas coisas para a vida e que os nossos sonhos encaixavam perfeitamente um no outro."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "A primeira vez que mexeste no meu cabelo",
+        text: "Estávamos no Morro sentados um ao lado do outro e começaste a passar os teus dedos pelo meu cabelo. Fiquei tão relaxado que parecia que o tempo tinha parado."
+    },
+{
+        title: "A primeira vez que mandamos reels/tiktok",
+        text: "Quando estavamos a  enviar aqueles primeiros vídeos fofos a dizer o que sentiamos um pelo outro. Hoje em dia as nossas conversas têm centenas desses pequenos momentos nossos."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "Quando me ajeitaste a roupa ou o cabelo",
+        text: "Aquele gesto tão automático e simples em que te aproximaste para me compor a gola do casaco ou mexer no meu cabelo. É um cuidado pequenino que me deixa sempre de coração cheio."
     },
-
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
-    },
-
-                              {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
-    },
-
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
-    },
-
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
-    },
-
 
     // =========================
     // TEMPORADA 4 (76-100)
