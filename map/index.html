@@ -14,11 +14,17 @@
 
   <body>
     <!-- NAVBAR -->
-
     <header class="navbar">
       <div class="logo"> ❤️ LoveFlix </div>
 
-      <nav>
+      <!-- Botão de Menu Hambúrguer para Telemóveis -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
         <a href="../index.html">Início</a>
         <a href="#">Filme</a>
         <a href="../reasons/index.html">100 Razões</a>
@@ -28,7 +34,6 @@
     </header>
 
     <!-- HERO -->
-
     <section class="hero">
       <div class="overlay"></div>
 
@@ -58,7 +63,6 @@
     </section>
 
     <!-- MAPA -->
-
     <main>
       <section class="map-section">
         <h2>As nossas memórias</h2>
@@ -67,7 +71,6 @@
       </section>
 
       <!-- LOCAIS -->
-
       <section class="locations-section">
         <h2>Lugares Marcantes</h2>
 
@@ -75,10 +78,18 @@
           <!-- Criado pelo JavaScript -->
         </div>
       </section>
+
+      <!-- TIMELINE -->
+      <section class="timeline">
+        <h2>A Nossa História</h2>
+
+        <div id="timelineContainer">
+          <!-- Criado pelo JavaScript -->
+        </div>
+      </section>
     </main>
 
     <!-- MODAL -->
-
     <div class="modal hidden" id="locationModal">
       <div class="modal-content">
         <button class="close-btn" id="closeModal"> ✕ </button>
@@ -103,22 +114,20 @@
       </div>
     </div>
 
-    <!-- TIMELINE -->
+    <!-- Script para abrir/fechar o menu mobile -->
+    <script>
+      const toggleBtn = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
 
-    <section class="timeline">
-      <h2>A Nossa História</h2>
-
-      <div id="timelineContainer">
-        <!-- Criado pelo JavaScript -->
-      </div>
-    </section>
+      toggleBtn.addEventListener('click', () => {
+        toggleBtn.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+    </script>
 
     <!-- SCRIPTS -->
-
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
     <script src="locationsData.js"></script>
-
     <script src="map.js"></script>
-</body>
+  </body>
 </html>

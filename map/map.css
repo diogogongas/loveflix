@@ -1,7 +1,6 @@
 /* ==========================
    RESET
 ========================== */
-
 *{
     margin:0;
     padding:0;
@@ -16,576 +15,544 @@ body{
     background:#141414;
     color:#fff;
     font-family:Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /* ==========================
-   NAVBAR
+   NAVBAR & MENU MOBILE
 ========================== */
-
 .navbar{
-
     position:fixed;
     top:0;
     left:0;
-
     width:100%;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:20px 60px;
-
-    background:linear-gradient(to bottom,#000,transparent);
-
+    background:linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
     z-index:1000;
-
 }
 
 .logo{
-
     color:#E50914;
     font-size:2rem;
     font-weight:bold;
-
 }
 
-nav{
+/* Botão Hambúrguer Estilizado (Linhas de 4px consistentes) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1002;
+}
 
+.menu-toggle .bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.nav-links{
     display:flex;
     gap:35px;
-
+    align-items: center;
 }
 
-nav a{
-
+.nav-links a{
     color:white;
     text-decoration:none;
     transition:.3s;
-
+    font-size: 0.95rem;
 }
 
-nav a:hover{
-
+.nav-links a:hover{
     color:#E50914;
-
 }
 
 /* ==========================
    HERO
 ========================== */
-
 .hero{
-
     position:relative;
     height:90vh;
-
-    background:url("../images/banner1.jpeg")
-    center center/cover
-    no-repeat;
-
+    background:url("../images/banner1.jpeg") center center/cover no-repeat;
 }
 
 .overlay{
-
     position:absolute;
     inset:0;
-
-    background:linear-gradient(
-
-        rgba(0,0,0,.25),
-        rgba(0,0,0,.85),
-        #141414
-
-    );
-
+    background:linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.85), #141414);
 }
 
 .hero-content{
-
     position:absolute;
-
     bottom:100px;
     left:70px;
-
     max-width:650px;
-
     z-index:5;
-
 }
 
 .original{
-
     color:#E50914;
     font-weight:bold;
     letter-spacing:2px;
-
+    font-size: 0.85rem;
 }
 
 .hero h1{
-
-    margin:20px 0;
-    font-size:4rem;
-
+    margin:15px 0;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    line-height: 1.1;
 }
 
 .info{
-
     display:flex;
     gap:20px;
-
     color:#ddd;
-
-    margin-bottom:25px;
-
+    margin-bottom:20px;
+    font-size: 0.95rem;
 }
 
 .hero p{
-
-    font-size:1.15rem;
-    line-height:1.8;
-
+    font-size:1.1rem;
+    line-height:1.6;
+    color: #e5e5e5;
 }
 
 /* ==========================
    BOTÕES
 ========================== */
-
 .buttons{
-
-    margin-top:30px;
-
+    margin-top:25px;
     display:flex;
-    gap:20px;
-
+    gap:15px;
+    flex-wrap: wrap;
 }
 
 button{
-
     border:none;
     cursor:pointer;
-    border-radius:5px;
-
-    padding:15px 30px;
-
+    border-radius:4px;
+    padding:12px 24px;
     font-size:1rem;
-
+    font-weight: bold;
     transition:.3s;
-
 }
 
 .play-btn{
-
     background:white;
     color:black;
-    font-weight:bold;
-
 }
 
 .play-btn:hover{
-
     background:#ddd;
-
 }
 
 .list-btn{
-
-    background:#444;
+    background:rgba(109,109,110,.7);
     color:white;
-
 }
 
 .list-btn:hover{
-
-    background:#666;
-
+    background:rgba(109,109,110,1);
 }
 
 /* ==========================
    MAIN
 ========================== */
-
 main{
-
     padding:60px;
-
 }
 
 /* ==========================
    MAPA
 ========================== */
-
 .map-section{
-
     margin-bottom:70px;
-
 }
 
 .map-section h2{
-
     margin-bottom:20px;
     font-size:2rem;
-
 }
 
 #map{
-
     width:100%;
-    height:600px;
-
-    border-radius:15px;
-
+    height:550px;
+    border-radius:12px;
     overflow:hidden;
-
-    border:2px solid #2c2c2c;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.4);
-
+    border:1px solid rgba(255,255,255,0.1);
+    box-shadow:0 15px 35px rgba(0,0,0,.5);
 }
 
 /* ==========================
-   LOCAIS
+   LOCAIS (COMPACTOS)
 ========================== */
-
 .locations-section{
-
-    margin-bottom:80px;
-
+    margin-bottom:70px;
 }
 
 .locations-section h2{
-
-    margin-bottom:30px;
+    margin-bottom:25px;
     font-size:2rem;
-
 }
 
 .locations-grid{
-
     display:grid;
-
-    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
-
-    gap:30px;
-
+    grid-template-columns:repeat(auto-fill, minmax(260px,1fr));
+    gap:20px;
 }
 
 .location-card{
-
     background:#1f1f1f;
-
-    border-radius:12px;
-
+    border-radius:10px;
     overflow:hidden;
-
     cursor:pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center; /* Alinha imagem e texto lado a lado se preferires, ou mantém compacto em coluna */
+}
 
-    transition:.35s;
-
+/* Transformamos o cartão num formato mais horizontal e compacto estilo episódio */
+.location-card {
+    flex-direction: column;
 }
 
 .location-card:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:0 20px 40px rgba(0,0,0,.45);
-
+    transform:translateY(-5px) scale(1.02);
+    background: #252525;
+    border-color: rgba(229, 9, 20, 0.4);
+    box-shadow:0 12px 25px rgba(229, 9, 20, 0.15);
+    cursor: pointer;
 }
 
 .location-card img{
-
     width:100%;
-    height:180px;
-
+    height:130px; /* Altura reduzida para ficar mais compacto */
     object-fit:cover;
-
 }
 
 .location-info{
-
-    padding:20px;
-
+    padding: 14px 16px;
 }
 
 .location-info h3{
-
-    margin-bottom:10px;
-
+    margin-bottom: 4px;
+    font-size: 1.05rem;
 }
 
 .location-info p{
+    color:#aaa;
+    font-size: 0.88rem;
+    line-height:1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Evita textos muito longos a ocupar espaço desnecessário */
+}
 
-    color:#bbb;
+/* ==========================
+   TIMELINE (COMPACTA)
+========================== */
+.timeline{
+    padding: 0;
+    margin-bottom: 40px;
+}
 
-    line-height:1.6;
+.timeline h2{
+    margin-bottom:25px;
+    font-size:2rem;
+}
 
+#timelineContainer{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding-bottom:15px;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #E50914 transparent;
+}
+
+#timelineContainer::-webkit-scrollbar{
+    height: 6px;
+}
+
+#timelineContainer::-webkit-scrollbar-thumb{
+    background: #333;
+    border-radius: 3px;
+}
+
+.timeline-item{
+    min-width:260px;
+    max-width:260px;
+    background:#1f1f1f;
+    border-left:4px solid #E50914;
+    border-radius:8px;
+    padding:16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-right: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-4px);
+}
+
+.timeline-item h3{
+    margin-bottom:4px;
+    font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.timeline-item span{
+    color:#E50914;
+    font-weight: 600;
+    font-size:.8rem;
+}
+
+.timeline-item p{
+    margin-top:8px;
+    line-height:1.4;
+    color: #aaa;
+    font-size: 0.88rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita o texto a 2 linhas para manter tudo compacto */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* ==========================
    MODAL
 ========================== */
-
 .modal{
-
     position:fixed;
-
     inset:0;
-
-    background:rgba(0,0,0,.9);
-
+    background:rgba(0,0,0,.85);
+    backdrop-filter: blur(5px);
     display:flex;
     justify-content:center;
     align-items:center;
-
     z-index:5000;
-
+    padding: 20px;
+    overflow-y: auto;
 }
 
 .hidden{
-
-    display:none;
-
+    display:none !important;
 }
 
 .modal-content{
-
-    width:900px;
+    position: relative;
+    width:750px;
     max-width:90%;
-
-    background:#181818;
-
-    border-radius:12px;
-
+    background:#1c1c1c;
+    border-radius:14px;
     overflow:hidden;
-
+    border: 1px solid rgba(255,255,255,0.1);
     animation:show .4s ease;
-
 }
 
 .modal-content img{
-
     width:100%;
-    height:220px;
-
+    height:280px;
     object-fit:cover;
-
 }
 
 .modal-info{
-
     padding:30px;
-
 }
 
 .modal-info h2{
-
-    margin-bottom:10px;
+    margin-bottom:8px;
     font-size:2rem;
-
+    color: #fff;
 }
 
 .location-date{
-
-    color:#bbb;
-    margin-bottom:8px;
-
+    color:#aaa;
+    margin-bottom:6px;
+    font-size: 0.9rem;
 }
 
 .location-place{
-
     color:#E50914;
-    margin-bottom:25px;
+    margin-bottom:20px;
     font-weight:bold;
-
+    font-size: 0.95rem;
 }
 
 .modal-info p{
-
-    line-height:1.8;
-
+    line-height:1.7;
+    color: #ddd;
+    font-size: 1.05rem;
 }
 
 .navigation{
-
     display:flex;
     justify-content:space-between;
-
-    padding:30px;
-
+    padding:20px 30px;
+    background: #181818;
+    border-top: 1px solid rgba(255,255,255,0.06);
 }
 
 .navigation button{
-
-    background:#E50914;
+    background:#333;
     color:white;
-
 }
 
 .navigation button:hover{
-
-    background:#b20710;
-
+    background:#E50914;
 }
 
 .close-btn{
-
     position:absolute;
-
     top:20px;
     right:20px;
-
-    width:45px;
-    height:45px;
-
+    width:38px;
+    height:38px;
     border-radius:50%;
-
-    background:black;
+    background:rgba(0, 0, 0, 0.7);
     color:white;
-
-    font-size:1.2rem;
-
+    font-size:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: .2s;
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
-/* ==========================
-   TIMELINE
-========================== */
-
-.timeline{
-
-    padding:60px;
-
-}
-
-.timeline h2{
-
-    margin-bottom:35px;
-    font-size:2rem;
-
-}
-
-#timelineContainer{
-
-    display:flex;
-
-    gap:30px;
-
-    overflow-x:auto;
-
-    padding-bottom:15px;
-
-}
-
-#timelineContainer::-webkit-scrollbar{
-
-    display:none;
-
-}
-
-.timeline-item{
-
-    min-width:250px;
-
-    background:#1f1f1f;
-
-    border-left:5px solid #E50914;
-
-    border-radius:10px;
-
-    padding:20px;
-
-}
-
-.timeline-item h3{
-
-    margin-bottom:10px;
-
-}
-
-.timeline-item span{
-
-    color:#bbb;
-    font-size:.9rem;
-
-}
-
-.timeline-item p{
-
-    margin-top:15px;
-
-    line-height:1.7;
-
+.close-btn:hover{
+    background:#E50914;
 }
 
 /* ==========================
    ANIMAÇÃO
 ========================== */
-
 @keyframes show{
-
     from{
-
         transform:scale(.9);
         opacity:0;
-
     }
-
     to{
-
         transform:scale(1);
         opacity:1;
-
     }
-
 }
 
 /* ==========================
    RESPONSIVO
 ========================== */
-
-@media(max-width:900px){
-
+@media(max-width:850px){
     .navbar{
-
-        padding:20px;
-
+        padding:15px 20px;
     }
 
-    nav{
+    /* Ativa o botão hambúrguer */
+    .menu-toggle {
+        display: flex;
+    }
 
-        display:none;
+    /* Menu lateral com transição suave */
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: rgba(20, 20, 20, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        width: 240px;
+        padding: 25px 20px;
+        gap: 18px;
+        align-items: flex-start;
+        border-bottom-left-radius: 12px;
+        border-left: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.6);
 
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-links a {
+        font-size: 1.05rem;
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
     .hero-content{
-
-        left:25px;
-        right:25px;
-        bottom:60px;
-
+        left:20px;
+        right:20px;
+        bottom:40px;
     }
 
     .hero h1{
-
-        font-size:2.8rem;
-
+        font-size:2.3rem;
     }
 
     main{
-
         padding:30px 20px;
-
     }
 
     #map{
-
-        height:400px;
-
+        height:380px;
     }
 
-    .timeline{
-
-        padding:30px 20px;
-
+    .modal-content img{
+        height:200px;
     }
 
+    .modal-info {
+        padding: 20px;
+    }
+
+    .navigation {
+        padding: 15px 20px;
+    }
+}
+
+@media(max-width: 480px) {
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero button {
+        width: 100%;
+        justify-content: center;
+    }
 }
