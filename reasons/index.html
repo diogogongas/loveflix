@@ -4,54 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>100 Razões Porque Te Amo ❤️</title>
-
     <link rel="stylesheet" href="reasons.css">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-
     <header class="navbar">
-
         <div class="logo">
             ❤️ LoveFlix
         </div>
 
-      <nav>
-        <a href="../index.html">Início</a>
-        <a href="#">Filme</a>
-        <a href="index.html">100 Razões</a>
-        <a href="../letters/index.html">Cartas para o Futuro</a>
-        <a href="../map/index.html">Mapa</a>
-      </nav>
+        <!-- Botão de Menu Hambúrguer para Telemóveis -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
+        <nav class="nav-links" id="nav-links">
+            <a href="../index.html">Início</a>
+            <a href="#">Filme</a>
+            <a href="index.html">100 Razões</a>
+            <a href="../letters/index.html">Cartas para o Futuro</a>
+            <a href="../map/index.html">Mapa</a>
+        </nav>
     </header>
 
     <!-- BANNER -->
-
     <section class="hero">
-
         <div class="overlay"></div>
 
         <div class="hero-content">
-
-          
-
+            <span class="original">SÉRIE ORIGINAL</span>
             <h1>100 Razões Porque Te Amo ❤️</h1>
 
             <div class="info">
-
                 <span>2026</span>
-
                 <span>❤️ Romance</span>
-
                 <span>100 Episódios</span>
-
                 <span>4 Temporadas</span>
-
             </div>
 
             <p>
@@ -60,7 +53,6 @@
             </p>
 
             <div class="buttons">
-
                 <button class="play-btn">
                     ▶ Continuar
                 </button>
@@ -68,186 +60,117 @@
                 <button class="list-btn">
                     ❤️ Favoritos
                 </button>
-
             </div>
-
         </div>
-
     </section>
 
     <!-- CONTEÚDO -->
-
     <main>
 
         <!-- PROGRESSO -->
-
         <section class="progress-section">
-
-
-
+            <div class="progress-header">
                 <span>Razões Descobertas</span>
-
                 <span id="progress-text">0 / 100</span>
-
-                
-
             </div>
 
             <div class="progress-bar">
-
                 <div id="progress-fill"></div>
-
             </div>
-            <br>
-                        <div class="progress-header">
+            
+            <div class="progress-footer">
                 <button id="resetProgress">
                     Reiniciar progresso
                 </button>
-
+            </div>
         </section>
 
         <!-- TEMPORADA 1 -->
+        <section class="season">
+            <div class="season-title">
+                <h2>Temporada 1</h2>
+                <p>O que mais amo em ti</p>
+            </div>
 
-<section class="season">
-
-    <div class="season-title">
-        <h2>Temporada 1</h2>
-        <p>O que mais amo em ti</p>
-    </div>
-
-    <div class="carousel">
-
-        <button class="arrow left">
-            ❮
-        </button>
-
-        <div class="episodes" id="season1"></div>
-
-        <button class="arrow right">
-            ❯
-        </button>
-
-    </div>
-
-</section>
+            <div class="carousel">
+                <button class="arrow left">❮</button>
+                <div class="episodes" id="season1"></div>
+                <button class="arrow right">❯</button>
+            </div>
+        </section>
 
         <!-- TEMPORADA 2 -->
-<section class="season">
+        <section class="season">
+            <div class="season-title">
+                <h2>Temporada 2</h2>
+                <p>Como me fazes sentir</p>
+            </div>
 
-    <div class="season-title">
-        <h2>Temporada 2</h2>
-        <p>Como me fazes sentir</p>
-    </div>
-
-    <div class="carousel">
-
-        <button class="arrow left">
-            ❮
-        </button>
-
-        <div class="episodes" id="season2"></div>
-
-        <button class="arrow right">
-            ❯
-        </button>
-
-    </div>
-
-</section>
+            <div class="carousel">
+                <button class="arrow left">❮</button>
+                <div class="episodes" id="season2"></div>
+                <button class="arrow right">❯</button>
+            </div>
+        </section>
 
         <!-- TEMPORADA 3 -->
+        <section class="season">
+            <div class="season-title">
+                <h2>Temporada 3</h2>
+                <p>As nossas memórias</p>
+            </div>
 
-<section class="season">
-
-    <div class="season-title">
-        <h2>Temporada 3</h2>
-        <p>As nossas memórias</p>
-    </div>
-
-    <div class="carousel">
-
-        <button class="arrow left">
-            ❮
-        </button>
-
-        <div class="episodes" id="season3"></div>
-
-        <button class="arrow right">
-            ❯
-        </button>
-
-    </div>
-
-</section>
+            <div class="carousel">
+                <button class="arrow left">❮</button>
+                <div class="episodes" id="season3"></div>
+                <button class="arrow right">❯</button>
+            </div>
+        </section>
 
         <!-- TEMPORADA 4 -->
+        <section class="season">
+            <div class="season-title">
+                <h2>Temporada 4</h2>
+                <p>O nosso futuro</p>
+            </div>
 
-<section class="season">
-
-    <div class="season-title">
-        <h2>Temporada 4</h2>
-        <p>O nosso futuro</p>
-    </div>
-
-    <div class="carousel">
-
-        <button class="arrow left">
-            ❮
-        </button>
-
-        <div class="episodes" id="season4"></div>
-
-        <button class="arrow right">
-            ❯
-        </button>
-
-    </div>
-
-</section>
+            <div class="carousel">
+                <button class="arrow left">❮</button>
+                <div class="episodes" id="season4"></div>
+                <button class="arrow right">❯</button>
+            </div>
+        </section>
 
     </main>
 
     <!-- MODAL -->
-
     <div class="modal hidden" id="reasonModal">
-
         <div class="modal-content">
+            <button class="close-btn" id="closeModal">✕</button>
 
-            <button class="close-btn" id="closeModal">
-                ✕
-            </button>
-
-
-            <h2 id="modalTitle">
-                Razão #1
-            </h2>
+            <h2 id="modalTitle">Razão #1</h2>
 
             <p id="modalText">
-
-                Porque o teu sorriso consegue iluminar
-                até os meus dias mais difíceis.
-
+                Porque o teu sorriso consegue iluminar até os meus dias mais difíceis.
             </p>
 
             <div class="modal-buttons">
-
-                <button id="prevReason">
-
-                    ← Anterior
-
-                </button>
-
-                <button id="nextReason">
-
-                    Próxima →
-
-                </button>
-
+                <button id="prevReason">← Anterior</button>
+                <button id="nextReason">Próxima →</button>
             </div>
-
         </div>
-
     </div>
+
+    <!-- Script para abrir/fechar o menu mobile -->
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleBtn.addEventListener('click', () => {
+            toggleBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
     <script src="reasonsData.js"></script>
     <script src="reasons.js"></script>
