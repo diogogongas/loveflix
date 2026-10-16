@@ -134,22 +134,19 @@ const rawReasons = [
         text: "Além de seres o amor da minha vida, és também a minha melhor amiga, aquela pessoa a quem posso contar tudo sem sentir vergonha ou recio de nada."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "A tua forma de expressar afetos",
+        text: "Adoro como não precisas de grandes discursos para mostrar amor. A forma como me dás um beijo ou um abraço já diz tudo."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "A tua voz quando estás com sono",
+        text: "Quando estamos em chamada á noite e a tua voz começa a ficar mais calminha porque estás a adormecer. Fico completamente apaixonado."
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "O teu brilho nos olhos quando estás feliz",
+        text: "Quando estás feliz ou entusiasmada com alguma coisa, os teus olhos ganham um brilho tão único e especial que é impossível não sorrir. É nesses momentos que me dou conta do quão abençoado sou por estar ao teu lado."
     },
 
     // =========================
