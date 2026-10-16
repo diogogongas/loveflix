@@ -32,16 +32,42 @@ body {
   font-weight: bold;
 }
 
-/* Botão de Hambúrguer Oculto no Desktop */
+/* --- BOTÃO HAMBÚRGUER ESTILIZADO --- */
 .menu-toggle {
-  display: none;
+  display: none; /* Oculto no desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
   background: transparent;
-  color: white;
-  font-size: 1.8rem;
+  border: none;
   cursor: pointer;
-  padding: 5px;
+  padding: 0;
+  z-index: 102;
 }
 
+.menu-toggle .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animação do botão para formato de "X" quando ativo */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(9.5px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: translateY(-9.5px) rotate(-45deg);
+}
+
+/* --- LINKS DE NAVEGAÇÃO --- */
 .nav-links {
   display: flex;
   gap: 20px;
@@ -207,46 +233,53 @@ main {
   transform: scale(1.03);
 }
 
-/* --- MEDIA QUERIES (RESPONSIVIDADE MOBILE) --- */
+/* --- MEDIA QUERIES (RESPONSIVIDADE MOBILE COM TRANSIÇÕES) --- */
 @media (max-width: 850px) {
   .navbar {
     padding: 15px 20px;
   }
 
-  /* Mostra o botão de hambúrguer */
+  /* Mostra o botão personalizado */
   .menu-toggle {
-    display: block;
+    display: flex;
   }
 
-  /* Transforma a nav num painel flutuante escondido por defeito */
+  /* Painel móvel com transição suave (Fade + Slide) */
   .nav-links {
     position: absolute;
     top: 100%;
     right: 0;
     background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(10px);
     flex-direction: column;
-    width: 220px;
-    padding: 20px;
-    gap: 15px;
+    width: 240px;
+    padding: 25px 20px;
+    gap: 18px;
     align-items: flex-start;
-    border-bottom-left-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.1);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    
-    /* Estado oculto */
-    display: none; 
+    border-bottom-left-radius: 12px;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+
+    /* Efeitos de Transição Inicial (Fechado) */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   }
 
-  /* Quando ativado via JavaScript, mostra o menu */
+  /* Estado Aberto com Transição Fluida */
   .nav-links.active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   .nav-links a {
-    font-size: 1rem;
+    font-size: 1.05rem;
     width: 100%;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
   }
 
   .hero-content {

@@ -10,9 +10,11 @@
     <header class="navbar">
       <div class="logo">❤️ LoveFlix</div>
 
-      <!-- Botão de Menu Hambúrguer para Telemóveis -->
+      <!-- Botão do Menu Hambúrguer Melhorado -->
       <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
-        ☰
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
 
       <nav class="nav-links" id="nav-links">
@@ -62,12 +64,13 @@
       </section>
     </main>
 
-    <!-- Script simples para abrir/fechar o menu em mobile -->
+    <!-- Script para alternar a classe e animar o botão -->
     <script>
       const toggleBtn = document.getElementById('menu-toggle');
       const navLinks = document.getElementById('nav-links');
 
       toggleBtn.addEventListener('click', () => {
+        toggleBtn.classList.toggle('active');
         navLinks.classList.toggle('active');
       });
     </script>
