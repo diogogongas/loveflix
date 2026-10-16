@@ -32,6 +32,16 @@ body {
   font-weight: bold;
 }
 
+/* Botão de Hambúrguer Oculto no Desktop */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
 .nav-links {
   display: flex;
   gap: 20px;
@@ -52,7 +62,7 @@ body {
 /* --- HERO SECTION --- */
 .hero {
   height: 100vh;
-  height: 100dvh; /* Compatibilidade mobile perfeita */
+  height: 100dvh;
   background: url("images/banner5.webp") center/cover no-repeat;
   position: relative;
   display: flex;
@@ -71,7 +81,7 @@ body {
   width: 100%;
   max-width: 650px;
   padding: 0 40px;
-  margin-top: 60px; /* Compensa a navbar fixa */
+  margin-top: 60px;
 }
 
 .hero h1 {
@@ -101,7 +111,7 @@ body {
   flex-wrap: wrap;
 }
 
-button {
+.hero button {
   border: none;
   cursor: pointer;
   padding: 12px 24px;
@@ -114,7 +124,7 @@ button {
   transition: transform 0.2s, background-color 0.2s;
 }
 
-button:active {
+.hero button:active {
   transform: scale(0.96);
 }
 
@@ -198,23 +208,45 @@ main {
 }
 
 /* --- MEDIA QUERIES (RESPONSIVIDADE MOBILE) --- */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .navbar {
     padding: 15px 20px;
   }
 
-  /* Esconde alguns links menos essenciais na navbar ou transforma-os num formato compacto se necessário */
+  /* Mostra o botão de hambúrguer */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Transforma a nav num painel flutuante escondido por defeito */
   .nav-links {
-    gap: 12px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(20, 20, 20, 0.95);
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    gap: 15px;
+    align-items: flex-start;
+    border-bottom-left-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    
+    /* Estado oculto */
+    display: none; 
+  }
+
+  /* Quando ativado via JavaScript, mostra o menu */
+  .nav-links.active {
+    display: flex;
   }
 
   .nav-links a {
-    font-size: 0.85rem;
-  }
-
-  /* Em ecrãs muito pequenos, podemos ocultar o link "Filme" para poupar espaço */
-  .nav-links a:nth-child(2) {
-    display: none; 
+    font-size: 1rem;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
   }
 
   .hero-content {
@@ -233,20 +265,12 @@ main {
 }
 
 @media (max-width: 480px) {
-  .nav-links {
-    gap: 8px;
-  }
-  
-  .nav-links a {
-    font-size: 0.75rem;
-  }
-
   .buttons {
     flex-direction: column;
     width: 100%;
   }
 
-  button {
+  .hero button {
     width: 100%;
     justify-content: center;
   }
