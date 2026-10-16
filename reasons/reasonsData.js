@@ -549,47 +549,41 @@ const rawReasons = [
 
     },
 
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
-    },
-
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
-    },
-
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
-    },
-
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
-    },
-
-
-                                  {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
-    },
-
-                                    {
-        title: "Tenho que ver",
-        text: "Tenho que ver"
-
+{
+        title: "Celebrarmos os nossos aniversários de namoro",
+        text: "Imaginando-nos daqui a 10, 20 ou 30 anos a olhar para trás e a festejar o dia em que tudo começou, com a certeza de que a nossa escolha foi a melhor das nossas vidas."
     },
 
 {
-    title: "A razão número 100",
-    text: "A verdade é que nunca vão existir apenas 100 razões para te amar. Podia escrever mais mil e mesmo assim iam faltar muitas. Enquanto estivermos juntos vou descobrir uma razão nova todos os dias. Amo-te infinitamente. ❤️"
-},
+        title: "Apoiar-te em todas as etapas profissionais",
+        text: "Quero estar ao teu lado para te abraçar no final dos teus dias mais cansativos de trabalho, comemorar as tuas promoções e ver-te a ter o sucesso profissional que tanto mereces."
+    },
+
+{
+        title: "Planearmos as nossas férias de Verão",
+        text: "Quero passar todos os anos a pesquisar destinos contigo, a escolher praias, hotéis e a contar os dias no calendário para irmos juntos descansar para o sol."
+    },
+
+{
+        title: "Os dias de chuva na nossa casa",
+        text: "Sonho com aqueles dias cinzentos de chuva em que ficamos em casa de pijama, a fazer panquecas ou um chocolate quente, sem precisar de sair para lado nenhum porque temos tudo ali."
+    },
+
+
+{
+        title: "Superar os desafios da vida como uma equipa",
+        text: "Sei que a vida terá altos e baixos, mas saber que vou ter a tua mão para segurar em qualquer tempestade dá-me uma coragem e uma paz gigantes para o futuro."
+    },
+
+{
+        title: "Manter a chama e o romance sempre vivos",
+        text: "Prometo que, mesmo com a rotina do dia a dia e com o passar dos anos, nunca vou deixar de te amar da mesma forma como te amo agora , de te trazer flores do nada ou de te fazersurpresas do nada."
+    },
+
+{
+        title: "Razão 100: O fim da Temporada 1... e o início de para sempre",
+        text: "A verdade é que nunca existirão apenas 100 razões para te amar. Este site pode ter chegado à razão número 100, mas a nossa história está só a começar. Enquanto tu existires, eu vou continuar a descobrir um motivo novo todos os dias para me apaixonar por ti. O LOVEFLIX nunca vai ter um episódio final, porque a minha temporada favorita da vida é e será sempre contigo. Amo-te infinitamente, hoje e para sempre meu amor ❤️❤️❤️"
+    }
 
 
 
