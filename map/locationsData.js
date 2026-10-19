@@ -144,6 +144,24 @@ description:"Adorei vêr o pôr do sol contigo minha princesa, não sei porque o
 // Ver se dá para diminuir o texto
 },
 
+{
+
+title:"Date do pôr do Sol",
+
+date:"18 Outubro 2026",
+
+place:"Espinho",
+
+lat:41.007759180349986,
+
+lng:-8.646425620264717,
+
+image:"../images/date_sunset.jpeg",
+
+description:"Depois de meses a combinarmos finalmente conseguimos ter o nosso date na praia para ver-mos o pôr do sol juntos, posso dizer com toda a minha certeza que esse momento foi um dos mais especiais de toda a minha VIDA, porque consegui ver uma o pôr do sol que para mim já é muito simbólico, mas poder faze-lo com o amor da minha vida melhora sempre cada ocasião. Também tivemos a troca de presentes e nesse momento o meu coração derreteu-se todo com os presentes que me deste, não pelos presentes em si que também tavam muito lindos, mas foi mais pelo jesto, pelo tempo e pela intenção que depositaste em, cada palavra. Amei mesmo muito o nosso date "
+
+},
+
 ];
 
 // =========================================
